@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>PROFSTROY | Стройка, которая строит будущее | Вакансии 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Фоновый контейнер с недостроенным монолитом -->
+    <div class="bg-building"></div>
+    <div class="bg-overlay-dark"></div>
+
+    <!-- Плавающие белые каски -->
+    <div class="floating-helmets">
+        <div class="helmet helmet1">⛑️</div>
+        <div class="helmet helmet2">⛑️</div>
+        <div class="helmet helmet3">⛑️</div>
+        <div class="helmet helmet4">⛑️</div>
+        <div class="helmet helmet5">⛑️</div>
+        <div class="helmet helmet6">⛑️</div>
+    </div>
+
+    <!-- Кастомный курсор -->
+    <div class="custom-cursor"></div>
+
+    <div class="container">
+        <!-- Навбар с интерактивом -->
+        <nav class="glass-nav">
+            <div class="logo">
+                <i class="fas fa-hard-hat"></i>
+                <span>PROF<span class="accent">STROY</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#vacancies" class="nav-link">Вакансии</a>
+                <a href="#benefits" class="nav-link">Преимущества</a>
+                <a href="#contact" class="nav-link contact-nav">Связаться</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Hero с анимированным текстом -->
+        <section class="hero">
+            <div class="hero-badge">
+                <i class="fas fa-chart-line"></i> Набор 2026 | Осталось 14 мест
+            </div>
+            <h1 class="hero-title">
+                Стройка<br>
+                <span class="gradient-text">нового поколения</span>
+            </h1>
+            <div class="hero-desc">
+                <p>Не просто работа — стройка, где ценят каждого. Монолитные работы, отделка, управление.</p>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="185">0</span>
+                    <span>бригад сформировано</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="27">0</span>
+                    <span>объектов сдано</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span>% доверия</span>
+                </div>
+            </div>
+            <button class="cta-glow" id="openFormBtn">
+                <i class="fas fa-phone-alt"></i> Оставить заявку
+                <span class="btn-glow"></span>
+            </button>
+        </section>
+
+        <!-- Вакансии с 3D-карточками -->
+        <section class="vacancies" id="vacancies">
+            <div class="section-header">
+                <div class="section-icon">🏗️</div>
+                <h2>Кого мы ищем?</h2>
+                <p>Ты — профессионал или хочешь им стать? У нас есть место для каждого</p>
+            </div>
+            <div class="vacancy-grid" id="vacancyGrid">
+                <div class="vacancy-card" data-tilt>
+                    <div class="card-icon">🪚</div>
+                    <h3>Разнорабочие</h3>
+                    <p>Демонтаж, подсобные работы, помощь бригадам</p>
+                    <div class="salary">от 150 000 ₽</div>
+                    <button class="card-btn" data-job="Разнорабочий">Выбрать</button>
+                </div>
+                <div class="vacancy-card" data-tilt>
+                    <div class="card-icon">🧱</div>
+                    <h3>Монолитчики</h3>
+                    <p>Армирование, опалубка, бетонирование</p>
+                    <div class="salary">до 220 000 ₽</div>
+                    <button class="card-btn" data-job="Монолитчик">Выбрать</button>
+                </div>
+                <div class="vacancy-card" data-tilt>
+                    <div class="card-icon">🎨</div>
+                    <h3>Отделочники</h3>
+                    <p>Штукатурка, шпаклёвка, покраска</p>
+                    <div class="salary">до 190 000 ₽</div>
+                    <button class="card-btn" data-job="Отделочник">Выбрать</button>
+                </div>
+                <div class="vacancy-card" data-tilt>
+                    <div class="card-icon">📐</div>
+                    <h3>Прорабы</h3>
+                    <p>Управление участком, контроль качества</p>
+                    <div class="salary">от 250 000 ₽</div>
+                    <button class="card-btn" data-job="Прораб">Выбрать</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества с прогресс-баром -->
+        <section class="benefits" id="benefits">
+            <div class="section-header">
+                <div class="section-icon">🏆</div>
+                <h2>Почему выбирают нас?</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-home"></i>
+                    <h4>Бесплатное жильё</h4>
+                    <p>Квартиры рядом с объектом, ремонт, бытовая техника</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Питание за счёт компании</h4>
+                    <p>Полноценный обед + ужин, диетическое меню</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-file-invoice"></i>
+                    <h4>Официально + соцпакет</h4>
+                    <p>Стаж, больничные, отпуск, ДМС</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-simple"></i>
+                    <h4>Карьерный рост</h4>
+                    <p>Повышение разряда, обучение за наш счёт</p>
+                </div>
+            </div>
+            <div class="progress-block">
+                <div class="progress-label">
+                    <span><i class="fas fa-users"></i> Набрано сотрудников</span>
+                    <span id="progressPercent">86%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-fill" id="progressFill" style="width: 86%;"></div>
+                </div>
+                <p class="progress-note">Осталось всего 14 мест на этот сезон! Успей записаться.</p>
+            </div>
+        </section>
+
+        <!-- Форма захвата контактов (модалка) -->
+        <div class="modal" id="contactModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-helmet-safety"></i> Оставь заявку</h3>
+                    <button class="close-modal" id="closeModalBtn">&times;</button>
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Ваше имя</label>
+                        <input type="text" id="nameInput" placeholder="Иван Строителев" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Номер телефона</label>
+                        <input type="tel" id="phoneInput" placeholder="+375 29 123 45 67" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Должность</label>
+                        <select id="jobSelect">
+                            <option value="Разнорабочий">Разнорабочий</option>
+                            <option value="Монолитчик">Монолитчик</option>
+                            <option value="Отделочник">Отделочник</option>
+                            <option value="Прораб">Прораб</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreeCheck" required>
+                        <label for="agreeCheck">Согласен на обработку данных</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-telegram"></i> Отправить заявку
+                    </button>
+                </form>
+                <div class="modal-footnote">
+                    Нажимая кнопку, вы даёте согласие на звонок в течение 10 минут.
+                </div>
+            </div>
+        </div>
+
+        <!-- Контакты футер -->
+        <footer class="footer" id="contact">
+            <div class="footer-contacts">
+                <div class="footer-col">
+                    <h4>Связь с HR</h4>
+                    <a href="https://wa.me/375298445000" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://t.me/+375336558368" target="_blank"><i class="fab fa-telegram"></i> Telegram 1</a>
+                    <a href="https://t.me/+375297310322" target="_blank"><i class="fab fa-telegram"></i> Telegram 2</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Адреса объектов</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Строителей 15к1</p>
+                    <p><i class="fas fa-tree"></i> Валдай, Жилой комплекс «Березовый»</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Режим работы</h4>
+                    <p>Ежедневно 9:00–21:00</p>
+                    <p>Звонок по заявке — 5 минут</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PROFSTROY — Стройка, где строят будущее. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
